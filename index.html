@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boulevard Web Design</title>
+    <link rel="icon" href="/assets/BWD Favicon.png" type="image/x-icon" />
+    <script src="/js/main.js" defer></script>
+    <link rel="stylesheet" href="/styles/global-styles.css" />
+    <link rel="stylesheet" href="/styles/home-styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <nav>
+      <header id="cs-navigation">
+        <div class="cs-top-bar">
+          <div class="cs-top-container">
+            <div class="cs-top-contact">
+              <a href="" class="cs-top-link">
+                <img
+                  class="cs-link-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg"
+                  alt="logo"
+                  width="16"
+                  height="16"
+                  aria-hidden="true"
+                  decoding="async" />
+                Call us @ (347)990-4820
+              </a>
+              <a href="" class="cs-top-link">
+                <img
+                  class="cs-link-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg"
+                  alt="logo"
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  decoding="async" />
+                Opening hours: Mon - Sat: 8:00am To 8:00pm
+              </a>
+            </div>
+            <div class="cs-top-social">
+              <a href="" class="cs-social-link">
+                <img
+                  class="cs-social-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg"
+                  alt="logo"
+                  width="12"
+                  height="12"
+                  aria-hidden="true"
+                  decoding="async" />
+              </a>
+              <a href="" class="cs-social-link">
+                <img
+                  class="cs-social-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg"
+                  alt="logo"
+                  width="12"
+                  height="12"
+                  aria-hidden="true"
+                  decoding="async" />
+              </a>
+              <a href="" class="cs-social-link">
+                <img
+                  class="cs-social-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg"
+                  alt="logo"
+                  width="12"
+                  height="12"
+                  aria-hidden="true"
+                  decoding="async" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cs-container">
+          <!--Nav Logo-->
+          <a href="" class="cs-logo" aria-label="back to home">
+            <img
+              src="/assets/Boulevard Web Design Logo.png"
+              alt="Boulevard Web Design Logo"
+              width="197"
+              height="43"
+              aria-hidden="true"
+              decoding="async" />
+          </a>
+          <!--Navigation List-->
+          <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+              <div class="cs-box" aria-hidden="true">
+                <span class="cs-line cs-line1" aria-hidden="true"></span>
+                <span class="cs-line cs-line2" aria-hidden="true"></span>
+                <span class="cs-line cs-line3" aria-hidden="true"></span>
+              </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+              <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                <li class="cs-li">
+                  <a href="" class="cs-li-link cs-active"> Home </a>
+                </li>
+                <li class="cs-li">
+                  <a href="" class="cs-li-link"> About </a>
+                </li>
+                <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                <li class="cs-li cs-dropdown" tabindex="0">
+                  <span class="cs-li-link">
+                    Services
+                    <img
+                      class="cs-drop-icon"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg"
+                      alt="dropdown icon"
+                      width="15"
+                      height="15"
+                      decoding="async"
+                      aria-hidden="true" />
+                  </span>
+                  <ul class="cs-drop-ul">
+                    <li class="cs-drop-li">
+                      <a href="" class="cs-li-link cs-drop-link">Web Design</a>
+                    </li>
+                    <li class="cs-drop-li">
+                      <a href="" class="cs-li-link cs-drop-link">Consulting</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="cs-li">
+                  <a href="" class="cs-li-link"> Pricing </a>
+                </li>
+                <li class="cs-li">
+                  <a href="" class="cs-li-link"> Portfolio </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+          <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+          <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+        </div>
+      </header>
+    </nav>
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-998">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">
+            <span class="green-pacifico">Boulevard</span>
+            <span> Web Design </span>
+          </span>
+          <p class="cs-text">Tailored Websites That Drive Growth.</p>
+          <a href="" class="cs-button-solid">Contact Us Now</a>
+        </div>
+      </div>
+      <!--Background Image-->
+      <!--Image is also set as background image in CSS at 1400px for parallax effect-->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/table-m.jpg
+          " />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/table.jpg
+          " />
+        <img
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/table.jpg"
+          alt="logo"
+          width="1920"
+          height="1000" />
+      </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Content                     -->
+    <!-- ============================================ -->
+
+    <section id="content-1450">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">WHAT WE DO</span>
+          <h2 class="cs-title">
+            We deliver professional, customized websites that elevate small
+            businesses, providing them with the quality web presence they
+            deserve.
+          </h2>
+          <p class="cs-text">
+            Proactively procrastinate cross-platform results via extensive ideas
+            distinctively underwhelm enterprise. Compellingly plagiarize
+            value-added sources with inexpensive schemas. The school provides
+            the best possible education and practical training necessary for
+            those who wish to pursue a career in music, as well as for
+            music-loving children whose aims are non-professional.
+          </p>
+          <a href="" class="cs-button-solid">Read About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-943">
+      <div class="cs-container">
+        <!-- Left Content Section-->
+        <div class="cs-content">
+          <span class="cs-topper">WHAT WE OFFER</span>
+          <h2 class="cs-title">Websites Catered to Small Businesses</h2>
+          <p class="cs-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Repellendus tempore delectus quos facere impedit natus ipsam neque
+            quod commodi iure, autem voluptatibus sapiente id exercitationem
+            perspiciatis numquam placeat obcaecati rerum!
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg"
+                alt="hair cut"
+                width="40"
+                height="40" />
+            </picture>
+            <h3 class="cs-h3">Custom Website Design</h3>
+            <p class="cs-item-text">
+              From barely there pink to balayage blonde, our colour experts will
+              nail any tone you can imagine.
+            </p>
+            <a href="" class="cs-link">Read More</a>
+            <!--Background Image-->
+            <picture class="cs-background">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair1.jpg"
+                alt="hair cut"
+                width="480"
+                height="425" />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg"
+                alt="hair cut"
+                width="40"
+                height="40" />
+            </picture>
+            <h3 class="cs-h3">SEO Services</h3>
+            <p class="cs-item-text">
+              From barely there pink to balayage blonde, our colour experts will
+              nail any tone you can imagine.
+            </p>
+            <a href="" class="cs-link">Read More</a>
+            <!--Background Image-->
+            <picture class="cs-background">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair2.jpg"
+                alt="hair cut"
+                width="480"
+                height="425" />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg"
+                alt="hair cut"
+                width="40"
+                height="40" />
+            </picture>
+            <h3 class="cs-h3">Domain Registration and Hosting Setup</h3>
+            <p class="cs-item-text">
+              From barely there pink to balayage blonde, our colour experts will
+              nail any tone you can imagine.
+            </p>
+            <a href="" class="cs-link">Read More</a>
+            <!--Background Image-->
+            <picture class="cs-background">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair3.jpg"
+                alt="hair cut"
+                width="480"
+                height="425" />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg"
+                alt="hair cut"
+                width="40"
+                height="40" />
+            </picture>
+            <h3 class="cs-h3">Website Audits and Redesign</h3>
+            <p class="cs-item-text">
+              From barely there pink to balayage blonde, our colour experts will
+              nail any tone you can imagine.
+            </p>
+            <a href="" class="cs-link">Read More</a>
+            <!--Background Image-->
+            <picture class="cs-background">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair3.jpg"
+                alt="hair cut"
+                width="480"
+                height="425" />
+            </picture>
+          </li>
+        </ul>
+      </div>
+      <!--Waves Background-->
+      <picture class="cs-waves">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves-m.svg
+          " />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg
+          " />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg"
+          alt="waves graphic"
+          width="1920"
+          height="331"
+          aria-hidden="true" />
+      </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Why Choose Us                -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1662">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Why Choose Us</span>
+          <h2 class="cs-title">Why We’re the Right Fit for Your Business</h2>
+        </div>
+        <div class="cs-wrapper">
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <span class="cs-item-number">01</span>
+              <div class="cs-item-wrapper">
+                <h3 class="cs-h3">Custom Hand Coded Websites</h3>
+                <p class="cs-item-text">
+                  Each website is custom hand coded using HTML, CSS, and
+                  Javascript, guaranteeing the fastest and most secure sites
+                  leading to more customer and less worry for you.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <span class="cs-item-number">02</span>
+              <div class="cs-item-wrapper">
+                <h3 class="cs-h3">Mobile First Design</h3>
+                <p class="cs-item-text">
+                  Every site is built for mobile first, ensuring optimal code,
+                  and 100% responsivity for all devices.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <span class="cs-item-number">03</span>
+              <div class="cs-item-wrapper">
+                <h3 class="cs-h3">SEO Services Included</h3>
+                <p class="cs-item-text">
+                  We make sure all websites come 100/100 on PageSpeed Insights
+                  scores, increasing your business' rankings in Google.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <span class="cs-item-number">04</span>
+              <div class="cs-item-wrapper">
+                <h3 class="cs-h3">Fastest Site Speeds</h3>
+                <p class="cs-item-text">
+                  "83% of online users expect websites they visit to load in
+                  three seconds or less." With your website it will load in less
+                  than two.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <span class="cs-item-number">05</span>
+              <div class="cs-item-wrapper">
+                <h3 class="cs-h3">Incredible Customer Service</h3>
+                <p class="cs-item-text">
+                  We respond to every message within 24 hours, ensuring you're
+                  supported at every step. Our dedicated team is here to address
+                  your questions and concerns.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <span class="cs-item-number">06</span>
+              <div class="cs-item-wrapper">
+                <h3 class="cs-h3">We Worry About It So You Don't Have To</h3>
+                <p class="cs-item-text">
+                  We handle every detail, allowing you to focus on your business
+                  while we create a high-quality, professional website.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Steps                    -->
+    <!-- ============================================ -->
+
+    <section id="steps-1666">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Steps</span>
+          <h2 class="cs-title">Building Your Online Boulevard</h2>
+          <p class="cs-text">
+            We have a simple process in order to make your experience as easy
+            and quick as possible. You give us the inspiration and direction to
+            go in, and we take care of the heavy lifting to create a beautiful
+            website.
+          </p>
+          <ul class="cs-faq-group">
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/map-pin-gold.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+                <span class="cs-button-text">Consultation</span>
+                <span class="cs-indicator" aria-hidden="true"></span>
+              </button>
+              <p class="cs-item-p">
+                First step would be to hop on a phone or zoom call to see what
+                your company would be looking for and how we can assist your
+                company with these issues.
+              </p>
+            </li>
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/calendar-gold.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+                <span class="cs-button-text">Design</span>
+                <span class="cs-indicator" aria-hidden="true"></span>
+              </button>
+              <p class="cs-item-p">
+                After discussing a plan for the website, we would reconvene
+                within a 2-3 business days with a mockup of the website to make
+                sure we're on the same page.
+              </p>
+            </li>
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/computer-gold.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+                <span class="cs-button-text">Development</span>
+                <span class="cs-indicator" aria-hidden="true"></span>
+              </button>
+              <p class="cs-item-p">
+                Once the mockup is agreed upon, development will be done within
+                3-4 business days.
+              </p>
+            </li>
+            <li class="cs-faq-item">
+              <button class="cs-button">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/map-pin-gold-2.svg"
+                  alt="icon"
+                  width="32"
+                  height="32" />
+                <span class="cs-button-text"> Deployment </span>
+                <span class="cs-indicator" aria-hidden="true"></span>
+              </button>
+              <p class="cs-item-p">
+                After thoroughly testing and checking functionality, we will
+                deploy the website!
+              </p>
+            </li>
+          </ul>
+          <a href="" class="cs-button-solid">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Pricing                     -->
+    <!-- ============================================ -->
+
+    <section id="pricing-1384">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Pricing</span>
+          <h2 class="cs-title">
+            Flexible Pricing Plans for Your Tailored Needs
+          </h2>
+          <p class="cs-text">
+            In the new era of technology we look in the future with certainty
+            and for any post types, or just they are so much great of all to a
+            program.
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <div class="cs-flex">
+              <span class="cs-package">Lump Sum</span>
+              <span class="cs-price"> $2500 </span>
+              <!-- Use this code when I want to mark a specific one! -->
+              <!-- <div class="cs-tag">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/fire.svg"
+                  decoding="async"
+                  alt="fire"
+                  width="16"
+                  height="16"
+                  loading="true" />
+                Hot Deal
+              </div> -->
+            </div>
+            <ul class="cs-ul">
+              <li class="cs-li">Mobile-Optimized</li>
+              <li class="cs-li">Free Custom Domain</li>
+              <li class="cs-li cs-disabled">Best Hosting</li>
+              <li class="cs-li cs-disabled">Outstanding Support</li>
+              <li class="cs-li cs-disabled">Happy Customers</li>
+            </ul>
+            <a href="" class="cs-button-transparent">Get Now</a>
+          </li>
+          <li class="cs-item cs-popular">
+            <div class="cs-flex">
+              <span class="cs-package">Standard Pack</span>
+              <span class="cs-price">
+                $175
+                <span class="cs-duration">/Month</span>
+              </span>
+
+              <!-- Use this code when I want to mark a specific one! -->
+              <!-- <div class="cs-tag">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/fire.svg"
+                  decoding="async"
+                  alt="fire"
+                  width="16"
+                  height="16"
+                  loading="true" />
+                Hot Deal
+              </div> -->
+            </div>
+            <ul class="cs-ul">
+              <li class="cs-li">Mobile-Optimized</li>
+              <li class="cs-li">Free Custom Domain</li>
+              <li class="cs-li">Best Hosting</li>
+              <li class="cs-li cs-disabled">Outstanding Support</li>
+              <li class="cs-li cs-disabled">Happy Customers</li>
+            </ul>
+            <a href="" class="cs-button-transparent">Get Now</a>
+          </li>
+          <li class="cs-item">
+            <div class="cs-flex">
+              <span class="cs-package">Ecommerce Sites</span>
+              <span class="cs-price">$7,000+</span>
+              <!-- Use this code when I want to mark a specific one! -->
+              <!-- <div class="cs-tag">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/fire.svg"
+                  decoding="async"
+                  alt="fire"
+                  width="16"
+                  height="16"
+                  loading="true" />
+                Hot Deal
+              </div> -->
+            </div>
+            <ul class="cs-ul">
+              <li class="cs-li">Mobile-Optimized</li>
+              <li class="cs-li">Free Custom Domain</li>
+              <li class="cs-li">Best Hosting</li>
+              <li class="cs-li">Outstanding Support</li>
+              <li class="cs-li">Happy Customers</li>
+            </ul>
+            <a href="" class="cs-button-transparent">Read More</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+
+    <section id="cta-51">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Contact Us</span>
+          <h2 class="cs-title">Get It Done With Us Today</h2>
+          <p class="cs-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit
+            pellentesque molestie. Diam, adipiscing ultrices eu turpis gravida.
+          </p>
+          <a href="" class="cs-button-solid">Get A Free Consultation</a>
+        </div>
+      </div>
+      <!-- Background Image-->
+      <picture class="cs-picture">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets-m.jpg
+          " />
+        <source
+          media="(min-width: 601px)"
+          srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cabinets.jpg"
+          alt="cabinets"
+          width="1920"
+          height="1280"
+          aria-hidden="true" />
+      </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Footer                      -->
+    <!-- ============================================ -->
+
+    <footer id="footer-1390">
+      <div class="cs-container">
+        <div class="cs-top">
+          <a aria-label="go back to home" class="cs-logo" href="">
+            <img
+              class="cs-logo-img"
+              loading="lazy"
+              decoding="async"
+              src="/assets/Boulevard Web Design Logo Black.jpeg"
+              alt="Boulevard Web Design Logo"
+              width="197"
+              height="43" />
+          </a>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <a href="" class="cs-link">Home</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">About</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">Services</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">Pricing</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">Portfolio</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-bottom">
+          <!--Social-->
+          <ul class="cs-social">
+            <li class="cs-social-li">
+              <a
+                href=""
+                class="cs-social-link"
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener">
+                <img
+                  class="cs-social-icon cs-default"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg"
+                  alt="icon"
+                  loading="lazy"
+                  decoding="async"
+                  width="12"
+                  height="12"
+                  aria-hidden="true" />
+              </a>
+            </li>
+            <li class="cs-social-li">
+              <a
+                href=""
+                class="cs-social-link"
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener">
+                <img
+                  class="cs-social-icon cs-default"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg"
+                  alt="icon"
+                  loading="lazy"
+                  decoding="async"
+                  width="12"
+                  height="12"
+                  aria-hidden="true" />
+              </a>
+            </li>
+            <li class="cs-social-li">
+              <a
+                href=""
+                class="cs-social-link"
+                aria-label="instagram"
+                target="_blank"
+                rel="noopener">
+                <img
+                  class="cs-social-icon cs-default"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg"
+                  alt="icon"
+                  loading="lazy"
+                  decoding="async"
+                  width="12"
+                  height="12"
+                  aria-hidden="true" />
+              </a>
+            </li>
+            <li class="cs-social-li">
+              <a
+                href=""
+                class="cs-social-link"
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener">
+                <img
+                  class="cs-social-icon cs-default"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg"
+                  alt="icon"
+                  loading="lazy"
+                  decoding="async"
+                  width="12"
+                  height="12"
+                  aria-hidden="true" />
+              </a>
+            </li>
+          </ul>
+          <span class="cs-copyright">
+            © Copyright 2024 -
+            <a href="" class="cs-copyright-link">Boulevard Web Design</a>
+          </span>
+          <div class="cs-flex">
+            <a href="" class="cs-copyright-link">Privacy Policy</a>
+            <span class="cs-separater">|</span>
+            <a href="" class="cs-copyright-link">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
