@@ -9,6 +9,9 @@
     <script src="/js/main.js" defer></script>
     <link rel="stylesheet" href="/styles/global-styles.css" />
     <link rel="stylesheet" href="/styles/home-styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ee48449e08.js"
+      crossorigin="anonymous"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
     </style>
@@ -195,19 +198,17 @@
     <section id="content-1450">
       <div class="cs-container">
         <div class="cs-content">
-          <span class="cs-topper">WHAT WE DO</span>
+          <span class="cs-topper">What We Do</span>
           <h2 class="cs-title">
             We deliver professional, customized websites that elevate small
             businesses, providing them with the quality web presence they
             deserve.
           </h2>
           <p class="cs-text">
-            Proactively procrastinate cross-platform results via extensive ideas
-            distinctively underwhelm enterprise. Compellingly plagiarize
-            value-added sources with inexpensive schemas. The school provides
-            the best possible education and practical training necessary for
-            those who wish to pursue a career in music, as well as for
-            music-loving children whose aims are non-professional.
+            Boulevard Web Design was created with one goal in mind: to help
+            small businesses thrive online. We know firsthand that having a
+            professional website can be a game-changer, and we’re passionate
+            about creating sites that deliver value.
           </p>
           <a href="" class="cs-button-solid">Read About Us</a>
         </div>
@@ -215,239 +216,353 @@
     </section>
 
     <!-- ============================================ -->
-    <!--                  Services                    -->
+    <!--                   Services                   -->
     <!-- ============================================ -->
 
-    <section id="services-943">
+    <section id="services-1191">
       <div class="cs-container">
-        <!-- Left Content Section-->
         <div class="cs-content">
-          <span class="cs-topper">WHAT WE OFFER</span>
+          <span class="cs-topper">What We Offer</span>
           <h2 class="cs-title">Websites Catered to Small Businesses</h2>
           <p class="cs-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus tempore delectus quos facere impedit natus ipsam neque
-            quod commodi iure, autem voluptatibus sapiente id exercitationem
-            perspiciatis numquam placeat obcaecati rerum!
+            Facilisis condimentum viverra scelerisque ac morbi sit sed. Turpis
+            sagittis in blandit eleifend tortor ullamcorper eu placerat. Et orci
+            felis volutpat, etiam vitae egestas volutpat pulvinar.
+          </p>
+        </div>
+        <!--Placed in a wrapper div so we can position the car absolutely inside the container to be centered in the middle of the list on desktop-->
+        <div class="cs-wrapper">
+          <!--Car-->
+          <picture class="cs-image">
+            <!--Mobile Image-->
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png
+              " />
+            <!--Tablet and above Image-->
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png
+              " />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png"
+              alt="car"
+              width="510"
+              height="193"
+              aria-hidden="true" />
+          </picture>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <!-- <img
+                  class="cs-icon"
+                  src="/assets/laptop-code.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="33"
+                  height="38"
+                  aria-hidden="true" /> -->
+                <i class="fa-solid fa-copyright" style="color: #0fd068"></i>
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Custom Website Design</h3>
+                <p class="cs-item-text">
+                  Boulevard Web Design hand codes high-performance, user-focused
+                  websites that help your business stand out online.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brake-red.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="33"
+                  height="38"
+                  aria-hidden="true" />
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Logo Design</h3>
+                <p class="cs-item-text">
+                  Our professional logo designer specializes in creating custom,
+                  memorable logos that reflect your brand’s identity and make a
+                  lasting impression.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/air-conditioner-red.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="33"
+                  height="38"
+                  aria-hidden="true" />
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">SEO Services</h3>
+                <p class="cs-item-text">
+                  We optimize your website’s content, keywords, and structure to
+                  boost search visibility and attract organic traffic from day
+                  one.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/motor%201%20red.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="33"
+                  height="38"
+                  aria-hidden="true" />
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Domain Registration and Hosting Setup</h3>
+                <p class="cs-item-text">
+                  Need a domain or hosting? We’ll secure everything for a live,
+                  secure website ready to grow with your business.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/alloy-wheel-red.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="33"
+                  height="38"
+                  aria-hidden="true" />
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Maintenence and Support</h3>
+                <p class="cs-item-text">
+                  Once your website is live, our support doesn’t stop. We offer
+                  ongoing maintenance to ensure your site is secure, up-to-date,
+                  and running smoothly.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <img
+                  class="cs-icon"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/contamination-red.svg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="icon"
+                  width="33"
+                  height="38"
+                  aria-hidden="true" />
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Best Customer Service</h3>
+                <p class="cs-item-text">
+                  Call, text, or email at anytime and you will get directly in
+                  touch with the owner and developer.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="" class="cs-button-solid">Book Appointment</a>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Why Choose Us               -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-296">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Services</span>
+          <h2 class="cs-title">
+            We Are Committed To Delivering Top Quality Legal Services
+          </h2>
+          <p class="cs-text">
+            At Stitch Law, let us help you solve problems so that you can focus
+            on your mission. We support businesses through periods of expansion,
+            succession.
           </p>
         </div>
         <ul class="cs-card-group">
           <li class="cs-item">
-            <picture class="cs-icon-wrapper">
+            <a class="cs-link" href="">
               <img
                 class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcase.svg"
+                alt="icon"
+                width=""
+                height=""
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg"
-                alt="hair cut"
-                width="40"
-                height="40" />
-            </picture>
-            <h3 class="cs-h3">Custom Website Design</h3>
-            <p class="cs-item-text">
-              From barely there pink to balayage blonde, our colour experts will
-              nail any tone you can imagine.
-            </p>
-            <a href="" class="cs-link">Read More</a>
-            <!--Background Image-->
-            <picture class="cs-background">
+                aria-hidden="true" />
+              <h3 class="cs-h3">99% winning guarantee</h3>
+              <p class="cs-item-text">
+                Full range of shipping disputes such as charter party disputes,
+                demurrage claims, purchase agreements, trade finance, carriage
+                and claims.
+              </p>
+            </a>
+            <picture class="cs-image" aria-hidden="true">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg
+                " />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg
+                " />
               <img
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair1.jpg"
-                alt="hair cut"
-                width="480"
-                height="425" />
+                src="https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg"
+                alt="library"
+                width="413"
+                height="266" />
             </picture>
           </li>
           <li class="cs-item">
-            <picture class="cs-icon-wrapper">
+            <a href="" class="cs-link">
               <img
                 class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcase.svg"
+                alt="icon"
+                width=""
+                height=""
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg"
-                alt="hair cut"
-                width="40"
-                height="40" />
-            </picture>
-            <h3 class="cs-h3">SEO Services</h3>
-            <p class="cs-item-text">
-              From barely there pink to balayage blonde, our colour experts will
-              nail any tone you can imagine.
-            </p>
-            <a href="" class="cs-link">Read More</a>
-            <!--Background Image-->
-            <picture class="cs-background">
+                aria-hidden="true" />
+              <h3 class="cs-h3">Secure management</h3>
+              <p class="cs-item-text">
+                Full range of shipping disputes such as charter party disputes,
+                demurrage claims, purchase agreements, trade finance, carriage
+                and claims.
+              </p>
+            </a>
+            <picture class="cs-image" aria-hidden="true">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg
+                " />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg
+                " />
               <img
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair2.jpg"
-                alt="hair cut"
-                width="480"
-                height="425" />
+                src="https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg"
+                alt="library"
+                width="413"
+                height="266" />
             </picture>
           </li>
           <li class="cs-item">
-            <picture class="cs-icon-wrapper">
+            <a href="" class="cs-link">
               <img
                 class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcase.svg"
+                alt="icon"
+                width=""
+                height=""
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg"
-                alt="hair cut"
-                width="40"
-                height="40" />
-            </picture>
-            <h3 class="cs-h3">Domain Registration and Hosting Setup</h3>
-            <p class="cs-item-text">
-              From barely there pink to balayage blonde, our colour experts will
-              nail any tone you can imagine.
-            </p>
-            <a href="" class="cs-link">Read More</a>
-            <!--Background Image-->
-            <picture class="cs-background">
+                aria-hidden="true" />
+              <h3 class="cs-h3">Full time support</h3>
+              <p class="cs-item-text">
+                Full range of shipping disputes such as charter party disputes,
+                demurrage claims, purchase agreements, trade finance, carriage
+                and claims.
+              </p>
+            </a>
+            <picture class="cs-image" aria-hidden="true">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg
+                " />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg
+                " />
               <img
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair3.jpg"
-                alt="hair cut"
-                width="480"
-                height="425" />
+                src="https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg"
+                alt="library"
+                width="413"
+                height="266" />
             </picture>
           </li>
           <li class="cs-item">
-            <picture class="cs-icon-wrapper">
+            <a class="cs-link" href="">
               <img
                 class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fcase.svg"
+                alt="icon"
+                width=""
+                height=""
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/trees-white.svg"
-                alt="hair cut"
-                width="40"
-                height="40" />
-            </picture>
-            <h3 class="cs-h3">Website Audits and Redesign</h3>
-            <p class="cs-item-text">
-              From barely there pink to balayage blonde, our colour experts will
-              nail any tone you can imagine.
-            </p>
-            <a href="" class="cs-link">Read More</a>
-            <!--Background Image-->
-            <picture class="cs-background">
+                aria-hidden="true" />
+              <h3 class="cs-h3">Family Law</h3>
+              <p class="cs-item-text">
+                We’ve helped thousands of organizations transform to become
+                relevant of helped thousands.
+              </p>
+            </a>
+            <picture class="cs-image">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg
+                " />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg
+                " />
               <img
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/hair3.jpg"
-                alt="hair cut"
-                width="480"
-                height="425" />
+                src="https://csimg.nyc3.digitaloceanspaces.com/Services/library.jpg"
+                alt="library"
+                width="413"
+                height="266"
+                aria-hidden="true" />
             </picture>
           </li>
         </ul>
-      </div>
-      <!--Waves Background-->
-      <picture class="cs-waves">
-        <source
-          media="(max-width: 600px)"
-          srcset="
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves-m.svg
-          " />
-        <source
-          media="(min-width: 601px)"
-          srcset="
-            https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg
-          " />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/waves.svg"
-          alt="waves graphic"
-          width="1920"
-          height="331"
-          aria-hidden="true" />
-      </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Why Choose Us                -->
-    <!-- ============================================ -->
-
-    <section id="why-choose-1662">
-      <div class="cs-container">
-        <div class="cs-content">
-          <span class="cs-topper">Why Choose Us</span>
-          <h2 class="cs-title">Why We’re the Right Fit for Your Business</h2>
-        </div>
-        <div class="cs-wrapper">
-          <ul class="cs-card-group">
-            <li class="cs-item">
-              <span class="cs-item-number">01</span>
-              <div class="cs-item-wrapper">
-                <h3 class="cs-h3">Custom Hand Coded Websites</h3>
-                <p class="cs-item-text">
-                  Each website is custom hand coded using HTML, CSS, and
-                  Javascript, guaranteeing the fastest and most secure sites
-                  leading to more customer and less worry for you.
-                </p>
-              </div>
-            </li>
-            <li class="cs-item">
-              <span class="cs-item-number">02</span>
-              <div class="cs-item-wrapper">
-                <h3 class="cs-h3">Mobile First Design</h3>
-                <p class="cs-item-text">
-                  Every site is built for mobile first, ensuring optimal code,
-                  and 100% responsivity for all devices.
-                </p>
-              </div>
-            </li>
-            <li class="cs-item">
-              <span class="cs-item-number">03</span>
-              <div class="cs-item-wrapper">
-                <h3 class="cs-h3">SEO Services Included</h3>
-                <p class="cs-item-text">
-                  We make sure all websites come 100/100 on PageSpeed Insights
-                  scores, increasing your business' rankings in Google.
-                </p>
-              </div>
-            </li>
-            <li class="cs-item">
-              <span class="cs-item-number">04</span>
-              <div class="cs-item-wrapper">
-                <h3 class="cs-h3">Fastest Site Speeds</h3>
-                <p class="cs-item-text">
-                  "83% of online users expect websites they visit to load in
-                  three seconds or less." With your website it will load in less
-                  than two.
-                </p>
-              </div>
-            </li>
-          </ul>
-          <ul class="cs-card-group">
-            <li class="cs-item">
-              <span class="cs-item-number">05</span>
-              <div class="cs-item-wrapper">
-                <h3 class="cs-h3">Incredible Customer Service</h3>
-                <p class="cs-item-text">
-                  We respond to every message within 24 hours, ensuring you're
-                  supported at every step. Our dedicated team is here to address
-                  your questions and concerns.
-                </p>
-              </div>
-            </li>
-            <li class="cs-item">
-              <span class="cs-item-number">06</span>
-              <div class="cs-item-wrapper">
-                <h3 class="cs-h3">We Worry About It So You Don't Have To</h3>
-                <p class="cs-item-text">
-                  We handle every detail, allowing you to focus on your business
-                  while we create a high-quality, professional website.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
       </div>
     </section>
 
@@ -666,7 +781,7 @@
       <div class="cs-container">
         <div class="cs-content">
           <span class="cs-topper">Contact Us</span>
-          <h2 class="cs-title">Get It Done With Us Today</h2>
+          <h2 class="cs-title">Get The Website Your Business Deserves</h2>
           <p class="cs-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit
             pellentesque molestie. Diam, adipiscing ultrices eu turpis gravida.

@@ -35,9 +35,9 @@ body {
 .cs-topper {
   font-size: var(--topperFontSize);
   line-height: 1.2em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: inherit;
-
+  font-family: "Pacifico";
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 0.25rem;
