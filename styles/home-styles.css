@@ -42,12 +42,59 @@
     position: relative;
     gap: 1rem;
     text-transform: none;
+    opacity: 0;
+    animation: fadeIn 1000ms 300ms ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes flicker {
+    0% {
+    }
+
+    20% {
+      text-shadow: 0 0 4px #fff, 0 0 12px #fff, 0 0 24px var(--primaryLight),
+        0 0 30px var(--primaryLight);
+      color: var(--primaryLight);
+    }
+    30% {
+      /* text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 4px var(--primaryLight),
+        0 0 30px var(--primaryLight); */
+      color: var(--primary);
+    }
+    40% {
+      text-shadow: 0 0 4px #fff, 0 0 12px #fff, 0 0 24px var(--primaryLight),
+        0 0 30px var(--primaryLight);
+      color: var(--primaryLight);
+    }
+    50% {
+      /* text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 4px var(--primaryLight),
+        0 0 30px var(--primaryLight); */
+      color: var(--primary);
+    }
+    100% {
+      text-shadow: 0 0 4px #fff, 0 0 16px #fff, 0 0 32px var(--primaryLight),
+        0 0 30px var(--primaryLight);
+      color: var(--primaryLight);
+    }
   }
 
   #hero-998 .green-pacifico {
     font-family: "Pacifico", cursive;
     color: var(--primary);
     letter-spacing: 0.1em;
+  }
+
+  #hero-998 .flicker {
+    font-size: 56px;
+    animation: flicker 1s 1000ms ease forwards 1;
   }
 
   #hero-998 .cs-topper:before {
@@ -81,6 +128,13 @@
     /* 24px - 48px */
     margin: 0 0 clamp(1.5rem, 3vw, 3rem) 0;
     color: var(--bodyTextColorWhite);
+    opacity: 0;
+    animation: fadeIn 1000ms 600ms ease forwards;
+  }
+
+  #hero-998 .cs-button-solid {
+    opacity: 0;
+    animation: fadeIn 1000ms 1000ms ease forwards;
   }
 
   #hero-998 .cs-button-solid:hover {
@@ -95,6 +149,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    /* transform: translate(50%); */
     z-index: -1;
   }
   #hero-998 .cs-background:before {
@@ -138,13 +193,16 @@
 /* Desktop Parallax - 1400px */
 @media only screen and (min-width: 87.5rem) {
   #hero-998 .cs-background {
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/table.jpg");
+    /* Background image for desktop (1920px and above) */
+    /* Parallax effect */
+    background: url(/assets/Hero-Backgrounds/hero-1920w.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    /* makes parallax effect */
     background-attachment: fixed;
   }
+
+  /* Hide the <img> tag as the background is being used */
   #hero-998 .cs-background img {
     display: none;
   }
@@ -158,6 +216,7 @@
 @media only screen and (min-width: 0rem) {
   #content-1450 {
     padding: var(--sectionPadding);
+    background-color: #f5f5dc;
   }
   #content-1450 .cs-container {
     width: 100%;
