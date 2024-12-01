@@ -23,16 +23,19 @@ function ariaExpanded() {
   }
 }
 
-// This script adds a class to the body after scrolling 100px
+// This script adds a class to the navigation after scrolling 90vh
 // and we used these body.scroll styles to create some on scroll
 // animations with the navbar
 
-document.addEventListener("scroll", (e) => {
+document.addEventListener("scroll", () => {
   const scroll = document.documentElement.scrollTop;
-  if (scroll >= 100) {
-    document.querySelector("body").classList.add("scroll");
+  const viewportHeight = window.innerHeight * 0.8; // 90% of the viewport height
+
+  const navigation = document.querySelector("#cs-navigation");
+  if (scroll >= viewportHeight) {
+    navigation.classList.add("scroll");
   } else {
-    document.querySelector("body").classList.remove("scroll");
+    navigation.classList.remove("scroll");
   }
 });
 

@@ -26,71 +26,11 @@
 
     <nav>
       <header id="cs-navigation">
-        <div class="cs-top-bar">
-          <div class="cs-top-container">
-            <div class="cs-top-contact">
-              <a href="" class="cs-top-link">
-                <img
-                  class="cs-link-icon"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg"
-                  alt="logo"
-                  width="16"
-                  height="16"
-                  aria-hidden="true"
-                  decoding="async" />
-                Call us @ (347)990-4820
-              </a>
-              <a href="" class="cs-top-link">
-                <img
-                  class="cs-link-icon"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg"
-                  alt="logo"
-                  width="20"
-                  height="20"
-                  aria-hidden="true"
-                  decoding="async" />
-                Opening hours: Mon - Sat: 8:00am To 8:00pm
-              </a>
-            </div>
-            <div class="cs-top-social">
-              <a href="" class="cs-social-link">
-                <img
-                  class="cs-social-icon"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg"
-                  alt="logo"
-                  width="12"
-                  height="12"
-                  aria-hidden="true"
-                  decoding="async" />
-              </a>
-              <a href="" class="cs-social-link">
-                <img
-                  class="cs-social-icon"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg"
-                  alt="logo"
-                  width="12"
-                  height="12"
-                  aria-hidden="true"
-                  decoding="async" />
-              </a>
-              <a href="" class="cs-social-link">
-                <img
-                  class="cs-social-icon"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg"
-                  alt="logo"
-                  width="12"
-                  height="12"
-                  aria-hidden="true"
-                  decoding="async" />
-              </a>
-            </div>
-          </div>
-        </div>
         <div class="cs-container">
           <!--Nav Logo-->
           <a href="" class="cs-logo" aria-label="back to home">
             <img
-              src="assets/Boulevard-Web-Design-Logo-1.jpg"
+              src="assets/Boulevard-Web-Design-Logo-v1.png"
               alt="Boulevard Web Design Logo"
               width="197"
               height="43"
@@ -118,16 +58,9 @@
                 </li>
                 <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                 <li class="cs-li cs-dropdown" tabindex="0">
-                  <span class="cs-li-link">
+                  <span class="cs-li-link primaryLight">
                     Services
-                    <img
-                      class="cs-drop-icon"
-                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg"
-                      alt="dropdown icon"
-                      width="15"
-                      height="15"
-                      decoding="async"
-                      aria-hidden="true" />
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
                   </span>
                   <ul class="cs-drop-ul">
                     <li class="cs-drop-li">
@@ -160,8 +93,27 @@
     <!-- ============================================ -->
     <!--                    Hero                      -->
     <!-- ============================================ -->
-
     <section id="hero-998">
+      <!-- Background Layer -->
+      <div class="hero-background">
+        <picture class="cs-background">
+          <!-- <source
+          media="(max-width: 600px)"
+          srcset="/assets/Hero-Backgrounds/hero-480w.jpg" />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/Hero-Backgrounds/hero-768w.jpg" /> -->
+          <img
+            decoding="async"
+            src="/assets/Hero-Backgrounds/hero-1920w.jpg"
+            alt="Boulevard Web Design Hero Background Image"
+            width="1920"
+            height="1000"
+            loading="lazy" />
+        </picture>
+      </div>
+
+      <!-- Content Layer -->
       <div class="cs-container">
         <div class="cs-content">
           <span class="cs-topper">
@@ -172,30 +124,13 @@
           <a href="" class="cs-button-solid">Contact Us Now</a>
         </div>
       </div>
-      <!--Background Image-->
-      <!--Image is also set as background image in CSS at 1400px for parallax effect-->
-      <picture class="cs-background">
-        <source
-          media="(max-width: 600px)"
-          srcset="/assets/Hero-Backgrounds/hero-480w.jpg" />
-        <source
-          media="(min-width: 601px)"
-          srcset="/assets/Hero-Backgrounds/hero-768w.jpg" />
-        <img
-          decoding="async"
-          src="/assets/Hero-Backgrounds/hero-1920w.jpg"
-          alt="Boulevard Web Design Hero Background Image"
-          width="1920"
-          height="1000"
-          loading="lazy" />
-      </picture>
     </section>
 
     <!-- ============================================ -->
     <!--                  Content                     -->
     <!-- ============================================ -->
 
-    <section id="content-1450">
+    <section id="content-1450" class="bg-color">
       <div class="cs-container">
         <div class="cs-content">
           <span class="cs-topper">What We Do</span>
@@ -219,7 +154,7 @@
     <!--                   Services                   -->
     <!-- ============================================ -->
 
-    <section id="services-1191">
+    <section id="services-1191" class="bg-color">
       <div class="cs-container">
         <div class="cs-content">
           <span class="cs-topper">What We Offer</span>
@@ -374,7 +309,7 @@
     <!--                  Why Choose Us               -->
     <!-- ============================================ -->
 
-    <section id="why-choose-296">
+    <section id="why-choose-296" class="bg-color">
       <div class="cs-container">
         <div class="cs-content">
           <span class="cs-topper">Why Choose Us</span>
@@ -543,101 +478,83 @@
     </section>
 
     <!-- ============================================ -->
-    <!--                  Steps                    -->
+    <!--                    Steps                     -->
     <!-- ============================================ -->
 
-    <section id="steps-1666">
+    <section id="steps" class="bg-color">
       <div class="cs-container">
-        <div class="cs-content">
-          <span class="cs-topper">Steps</span>
-          <h2 class="cs-title">Building Your Online Boulevard</h2>
-          <p class="cs-text">
-            We have a simple process in order to make your experience as easy
-            and quick as possible. You give us the inspiration and direction to
-            go in, and we take care of the heavy lifting to create a beautiful
-            website.
-          </p>
-          <ul class="cs-faq-group">
-            <li class="cs-faq-item">
-              <button class="cs-button">
-                <img
-                  class="cs-icon"
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/map-pin-gold.svg"
-                  alt="icon"
-                  width="32"
-                  height="32" />
-                <span class="cs-button-text">Consultation</span>
-                <span class="cs-indicator" aria-hidden="true"></span>
-              </button>
-              <p class="cs-item-p">
-                First step would be to hop on a phone or zoom call to see what
-                your company would be looking for and how we can assist your
-                company with these issues.
-              </p>
+        <div class="cs-image-group">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <!-- <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg
+              " /> -->
+            <!--Tablet and above Image-->
+            <!-- <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg
+              " /> -->
+            <img
+              loading="lazy"
+              decoding="async"
+              src="assets/Steps-Images/Building-Website-Image.jpg"
+              alt="dermatologist"
+              width="324"
+              height="467" />
+          </picture>
+        </div>
+        <div class="cs-wrapper">
+          <div class="cs-content">
+            <span class="cs-topper">How to get started</span>
+            <h2 class="cs-title">Building Your Online Boulevard</h2>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <span class="cs-number">01</span>
+              <div class="cs-flex">
+                <h3 class="cs-h3">Consultation</h3>
+                <p class="cs-item-text">
+                  First step would be to hop on a phone or zoom call to see what
+                  your company would be looking for and how we can assist your
+                  company with these issues.
+                </p>
+              </div>
             </li>
-            <li class="cs-faq-item">
-              <button class="cs-button">
-                <img
-                  class="cs-icon"
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/calendar-gold.svg"
-                  alt="icon"
-                  width="32"
-                  height="32" />
-                <span class="cs-button-text">Design</span>
-                <span class="cs-indicator" aria-hidden="true"></span>
-              </button>
-              <p class="cs-item-p">
-                After discussing a plan for the website, we would reconvene
-                within a 2-3 business days with a mockup of the website to make
-                sure we're on the same page.
-              </p>
+            <li class="cs-item">
+              <span class="cs-number">02</span>
+              <div class="cs-flex">
+                <h3 class="cs-h3">Design</h3>
+                <p class="cs-item-text">
+                  After discussing a plan for the website, we would reconvene
+                  within a 2-3 business days with a mockup of the website to
+                  make sure we're on the same page.
+                </p>
+              </div>
             </li>
-            <li class="cs-faq-item">
-              <button class="cs-button">
-                <img
-                  class="cs-icon"
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/computer-gold.svg"
-                  alt="icon"
-                  width="32"
-                  height="32" />
-                <span class="cs-button-text">Development</span>
-                <span class="cs-indicator" aria-hidden="true"></span>
-              </button>
-              <p class="cs-item-p">
-                Once the mockup is agreed upon, development will be done within
-                3-4 business days.
-              </p>
+            <li class="cs-item">
+              <span class="cs-number">03</span>
+              <div class="cs-flex">
+                <h3 class="cs-h3">Development</h3>
+                <p class="cs-item-text">
+                  Once the mockup is agreed upon, development will be done
+                  within 3-4 business days.
+                </p>
+              </div>
             </li>
-            <li class="cs-faq-item">
-              <button class="cs-button">
-                <img
-                  class="cs-icon"
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/map-pin-gold-2.svg"
-                  alt="icon"
-                  width="32"
-                  height="32" />
-                <span class="cs-button-text"> Deployment </span>
-                <span class="cs-indicator" aria-hidden="true"></span>
-              </button>
-              <p class="cs-item-p">
-                After thoroughly testing and checking functionality, we will
-                deploy the website!
-              </p>
+            <li class="cs-item">
+              <span class="cs-number">04</span>
+              <div class="cs-flex">
+                <h3 class="cs-h3">Deployment</h3>
+                <p class="cs-item-text">
+                  After thoroughly testing and checking functionality, we will
+                  deploy the website!
+                </p>
+              </div>
             </li>
           </ul>
-          <a href="" class="cs-button-solid">Contact Us</a>
         </div>
       </div>
     </section>
@@ -646,7 +563,7 @@
     <!--                  Pricing                     -->
     <!-- ============================================ -->
 
-    <section id="pricing-1384">
+    <section id="pricing-1384" class="bg-color">
       <div class="cs-container">
         <div class="cs-content">
           <span class="cs-topper">Our Pricing</span>
@@ -753,7 +670,7 @@
     <!--                     CTA                      -->
     <!-- ============================================ -->
 
-    <section id="cta-51">
+    <section id="cta-51" class="bg-color">
       <div class="cs-container">
         <div class="cs-content">
           <span class="cs-topper">Contact Us</span>
@@ -798,7 +715,7 @@
               class="cs-logo-img"
               loading="lazy"
               decoding="async"
-              src="assets/Boulevard-Web-Design-Dark-Logo.jpg"
+              src="assets/Boulevard-Web-Design-Logo-v1.png"
               alt="Boulevard Web Design Logo Black"
               width="197"
               height="43" />

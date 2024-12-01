@@ -44,6 +44,7 @@
     text-transform: none;
     opacity: 0;
     animation: fadeIn 1000ms 300ms ease forwards;
+    letter-spacing: -2px;
   }
 
   @keyframes fadeIn {
@@ -89,7 +90,7 @@
   #hero-998 .green-pacifico {
     font-family: "Pacifico", cursive;
     color: var(--primary);
-    letter-spacing: 0.1em;
+    letter-spacing: -1px;
   }
 
   #hero-998 .flicker {
@@ -188,6 +189,15 @@
     /* 24px-36px */
     font-size: clamp(24px, 2vw, 36px);
   }
+
+  #hero-998 .cs-background {
+    isolation: isolate; /* Creates a separate stacking context for the background */
+  }
+
+  #hero-998 .cs-content {
+    position: relative;
+    z-index: 2; /* Ensure content remains above blurred background */
+  }
 }
 
 /* Desktop Parallax - 1400px */
@@ -216,7 +226,6 @@
 @media only screen and (min-width: 0rem) {
   #content-1450 {
     padding: var(--sectionPadding);
-    background-color: #f5f5dc;
   }
   #content-1450 .cs-container {
     width: 100%;
@@ -588,188 +597,153 @@
 }
 
 /*-- -------------------------- -->
-<---         Steps              -->
+<---          Steps             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #steps-1666 {
+  #steps {
     padding: var(--sectionPadding);
-    background-color: #fff;
-    position: relative;
     overflow: hidden;
+    position: relative;
     z-index: 1;
   }
-  #steps-1666 .cs-container {
+  #steps .cs-container {
     width: 100%;
-    /* changes to 1280px at small desktop */
-    max-width: 36.5rem;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* 40px - 64px */
-    gap: clamp(2.5rem, 3.9vw, 4rem);
-  }
-
-  #steps-1666 .cs-content {
-    text-align: left;
-    width: 100%;
-    max-width: 40.625rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex: none;
-  }
-  #steps-1666 .cs-title {
-    /* 16px - 24px */
-    margin: 0 0 clamp(1rem, 1.96vw, 1.5rem) 0;
-  }
-  #steps-1666 .cs-text {
-    /* 16px - 24px */
-    margin: 0 0 clamp(1rem, 1.96vw, 1.5rem) 0;
-  }
-  #steps-1666 .cs-faq-group {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.4vw, 1.25rem);
+    gap: 2rem;
   }
-  #steps-1666 .cs-faq-item {
-    list-style: none;
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid #e8e8e8;
-    padding: 0;
-    box-sizing: border-box;
-    transition: border-bottom 0.3s;
-  }
-  #steps-1666 .cs-faq-item.active .cs-indicator:before {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-  #steps-1666 .cs-faq-item.active .cs-indicator:after {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  #steps-1666 .cs-faq-item.active .cs-item-p {
-    height: auto;
-    padding-top: 1rem;
-    opacity: 1;
-    transform: scaleY(1);
-  }
-  #steps-1666 .cs-faq-item:hover {
-    cursor: pointer;
-  }
-  #steps-1666 .cs-button {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    line-height: 1.2em;
-    text-align: left;
-    font-weight: bold;
-    width: 100%;
-    padding: 1rem 1rem 0 1rem;
-    border: none;
-    background: transparent;
-    color: var(--headerColor);
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    /* 16px - 24px */
-    gap: clamp(1rem, 2.5vw, 1.5rem);
-    position: relative;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  #steps-1666 .cs-button:hover {
-    cursor: pointer;
-  }
-
-  #steps-1666 .cs-button-solid {
-    margin-top: clamp(2rem, 2vh, 3rem);
-    align-self: center;
-  }
-
-  #steps-1666 .cs-indicator {
-    width: 1.5rem;
-    height: 1.5rem;
+  #steps .cs-image-group {
+    font-size: min(2.24vw, 0.9rem);
+    width: 30.125em;
+    height: 38.5em;
+    display: block;
     position: relative;
     z-index: 1;
   }
-  #steps-1666 .cs-indicator:before {
-    /* left line */
-    content: "";
-    width: 1rem;
-    height: 0.125rem;
-    background-color: #767676;
-    opacity: 1;
-    border-radius: 2px;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s;
-  }
-  #steps-1666 .cs-indicator:after {
-    /* right line */
-    content: "";
-    width: 1rem;
-    height: 0.125rem;
-    background-color: #767676;
-    opacity: 1;
-    border-radius: 2px;
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
-    transition: transform 0.5s;
-  }
-  #steps-1666 .cs-button-text {
-    width: 90%;
-    padding: 0;
-    display: block;
-  }
-  #steps-1666 .cs-item-p {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    width: 100%;
-    max-width: none;
-    height: 0;
-    margin: 0;
-    /* 16px - 24px */
-    padding: 0 1rem 1rem 1rem;
-    /* prevents padding and border from affecting height and width */
+  #steps .cs-picture {
+    width: 25.8125em;
+    height: 37.0625em;
+    margin-top: 1.5em;
     box-sizing: border-box;
-    opacity: 0;
-    color: var(--bodyTextColor);
-    /* clips the text so it doesn't show up */
+    background-color: var(--primary);
     overflow: hidden;
-    position: relative;
-    transition: opacity 0.3s, padding-bottom 0.3s, padding-top 0.3s;
+    border: 8px solid var(--primary);
+    border-radius: 4rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
   }
-  #steps-1666 .cs-icon {
-    width: 2rem;
-    height: 2rem;
+  #steps .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s;
+  }
+
+  #steps .cs-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #steps .cs-topper {
+    color: var(--primary);
+  }
+  #steps .cs-title {
+    margin: 0;
+  }
+  #steps .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: stretch;
+    grid-auto-flow: row;
+    /* 24px - 32px */
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+  #steps .cs-item {
+    list-style: none;
+    padding-bottom: 2rem;
+    border-bottom: #ded1bd 1px solid;
+    display: flex;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2vw, 1.5rem);
+    position: relative;
+  }
+  #steps .cs-item:last-of-type {
+    border-bottom: none;
+  }
+  #steps .cs-number {
+    /* 49px - 72px */
+    font-size: clamp(3.0625rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.1875em;
+    color: var(--primary);
+    opacity: 0.5;
     display: block;
+  }
+  #steps .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.125em;
+    margin: 0 0 0.75rem 0;
+    color: var(--headerColor);
+  }
+  #steps .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
   }
 }
-
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #steps-1666 .cs-container {
-    max-width: 1200px;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps .cs-container {
+    max-width: 80rem;
     flex-direction: row;
-    justify-content: center;
     align-items: stretch;
+    /* 48px - 60px */
+    gap: clamp(3rem, 6vw, 3.75rem);
   }
-  #steps-1666 .cs-content {
-    width: 100%;
+  #steps .cs-card-group {
+    /* 16px - 32px */
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+  #steps .cs-item {
+    flex-direction: row;
+  }
+  #steps .cs-image-group {
+    font-size: min(1.5vw, 1rem);
+    height: auto;
+    min-height: 38.5em;
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #steps .cs-picture {
+    height: 96.266234%;
   }
 }
 
