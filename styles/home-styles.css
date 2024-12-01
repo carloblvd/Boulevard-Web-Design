@@ -47,6 +47,12 @@
     letter-spacing: -2px;
   }
 
+  #hero-998 .green-pacifico {
+    font-family: "Pacifico", cursive;
+    color: var(--primary);
+    letter-spacing: -1px;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -85,12 +91,6 @@
         0 0 30px var(--primaryLight);
       color: var(--primaryLight);
     }
-  }
-
-  #hero-998 .green-pacifico {
-    font-family: "Pacifico", cursive;
-    color: var(--primary);
-    letter-spacing: -1px;
   }
 
   #hero-998 .flicker {
@@ -183,6 +183,10 @@
     /* 48px-60px */
     font-size: clamp(48px, 4vw, 60px);
     flex-direction: row;
+  }
+
+  #hero-998 .green-pacifico {
+    font-size: clamp(56px, 4vw, 80px);
   }
 
   #hero-998 .cs-text {
@@ -815,6 +819,7 @@
   #pricing-1384 .cs-item.cs-popular .cs-flex {
     background-color: var(--primary);
   }
+
   #pricing-1384 .cs-item.cs-popular .cs-tag {
     display: flex;
   }
@@ -921,29 +926,39 @@
     display: block;
   }
   #pricing-1384 .cs-ul {
-    width: 100%;
+    width: 80%;
     margin: 2.5rem 0 2.5rem 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.75rem;
     position: relative;
+    padding: 0;
   }
   #pricing-1384 .cs-li {
-    font-size: 1rem;
+    font-size: clamp(1em, 5vw, 18px);
     list-style: none;
     line-height: 1.5em;
     font-weight: 400;
     text-align: inherit;
     margin: 0;
+
     padding: 0;
+    width: 100%;
     color: var(--bodyTextColor);
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
   #pricing-1384 .cs-li.cs-disabled {
     opacity: 0.5;
   }
+
+  #pricing-1384 .cs-li .fa-circle-check {
+    color: var(--primary);
+  }
+
   #pricing-1384 .cs-button-transparent {
     font-size: 1rem;
     line-height: 3.5rem;
@@ -993,6 +1008,13 @@
   #pricing-1384 .cs-container .cs-card-group {
     flex-direction: row;
     align-items: stretch;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #pricing-1384 .cs-ul {
+    width: 50%;
   }
 }
 
