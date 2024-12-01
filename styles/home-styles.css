@@ -340,7 +340,7 @@
     height: 5rem;
     box-sizing: border-box;
     /* prevents border from affecting height and width */
-    background-color: #f7f7f7;
+    background-color: var(--primary);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -350,7 +350,8 @@
     flex: none;
   }
   #services-1191 .cs-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #fff;
   }
   #services-1191 .cs-h3 {
     font-size: 1.25rem;
@@ -456,7 +457,7 @@
   #why-choose-296 .cs-container {
     width: 100%;
     /* changes to 1440px on desktop */
-    max-width: 43.75rem;
+    max-width: 60rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -467,7 +468,7 @@
   #why-choose-296 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
@@ -475,8 +476,10 @@
   }
 
   #why-choose-296 .cs-title {
-    max-width: 30ch;
+    width: 100%;
+    max-width: 60rem;
   }
+
   #why-choose-296 .cs-card-group {
     width: 100%;
     margin: 0;
@@ -492,6 +495,7 @@
     list-style: none;
     text-align: left;
     width: 100%;
+    height: auto;
     margin: 0;
     padding: 2rem;
     background-color: #f7f7f7;
@@ -547,8 +551,8 @@
     text-decoration: none;
   }
   #why-choose-296 .cs-icon {
-    width: auto;
-    height: 3rem;
+    color: var(--primary);
+    font-size: 32px;
     margin-bottom: 1.5rem;
     display: block;
   }
@@ -567,6 +571,7 @@
   }
   #why-choose-296 .cs-item-text {
     font-size: 1rem;
+    font-weight: 500;
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
@@ -807,7 +812,7 @@
     list-style: none;
     width: 100%;
     margin: 0;
-    padding: 0 2.5rem 2.5rem;
+    padding: 0 2em 2em;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     background-color: #fff;
@@ -837,7 +842,7 @@
     transition: color 0.3s, border-color 0.6s, background-color 0.3s;
   }
   #pricing-1384 .cs-item.cs-popular .cs-button-transparent:hover {
-    border-color: #1a1a1a;
+    border-color: var(--primaryLight);
     background-color: #1a1a1a;
   }
   #pricing-1384 .cs-flex {
@@ -926,7 +931,7 @@
     display: block;
   }
   #pricing-1384 .cs-ul {
-    width: 80%;
+    width: 100%;
     margin: 2.5rem 0 2.5rem 0;
     display: flex;
     flex-direction: column;
@@ -936,19 +941,22 @@
     padding: 0;
   }
   #pricing-1384 .cs-li {
-    font-size: clamp(1em, 5vw, 18px);
+    font-size: clamp(14px, 2vw, 16px);
     list-style: none;
     line-height: 1.5em;
     font-weight: 400;
     text-align: inherit;
     margin: 0;
-
     padding: 0;
     width: 100%;
     color: var(--bodyTextColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .branding-pack {
+    font-weight: 600;
   }
 
   #pricing-1384 .cs-li.cs-disabled {
@@ -981,7 +989,7 @@
     display: block;
     height: 100%;
     width: 0%;
-    background: #1a1a1a;
+    background: var(--primaryLight);
     opacity: 1;
     top: 0;
     left: 0;
@@ -990,7 +998,7 @@
   }
   #pricing-1384 .cs-button-transparent:hover {
     color: var(--bodyTextColorWhite);
-    border-color: #1a1a1a;
+    border-color: var(--primaryLight);
   }
   #pricing-1384 .cs-button-transparent:hover:before {
     width: 100%;
@@ -1014,7 +1022,7 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #pricing-1384 .cs-ul {
-    width: 50%;
+    width: 100%;
   }
 }
 

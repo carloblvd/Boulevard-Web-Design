@@ -49,22 +49,3 @@ for (const item of dropDowns) {
   };
   item.addEventListener("click", onClick);
 }
-
-const faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
-
-for (const item of faqItems) {
-  const onClick = () => {
-    // Check if the clicked item is already active
-    const isActive = item.classList.contains("active");
-
-    // Close all items
-    faqItems.forEach((faq) => faq.classList.remove("active"));
-
-    // If it wasn't active, open it
-    if (!isActive) {
-      item.classList.add("active");
-    }
-  };
-
-  item.addEventListener("click", onClick);
-}
